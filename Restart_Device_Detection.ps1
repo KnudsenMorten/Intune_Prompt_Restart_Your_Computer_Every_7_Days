@@ -1,14 +1,8 @@
 ﻿##################################################################################################
-# 									Variables to fill
-##################################################################################################
-
-# Delay for BIOS update - if BIOS release is older than the delay, it will continue the process
+# Variables
 $Reboot_Delay = 7
+##################################################################################################
 
-##################################################################################################
-# 									Variables to fill
-##################################################################################################
-	
 $Last_reboot = Get-CimInstance Win32_OperatingSystem | Select-Object -ExpandProperty LastBootUpTime	
 
 # Check if fast boot is enabled: if enabled uptime may be wrong
