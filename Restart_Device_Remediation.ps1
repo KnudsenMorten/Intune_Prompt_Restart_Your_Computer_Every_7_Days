@@ -7,7 +7,7 @@ if (-not (Get-Module -ListAvailable -Name BurntToast)) {
 }
 
 # Threshold for reboot recommendation (set to 1 for testing)
-$ThresholdDays = 1
+$ThresholdDays = 7
 
 # Calculate uptime
 $LastBoot = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime
